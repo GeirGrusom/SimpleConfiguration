@@ -3,11 +3,20 @@ using System.Runtime.Serialization;
 
 namespace SimpleConfiguration
 {
+    /// <summary>
+    /// When this exception is thrown it indicates that a configuration key is missing from the configuration set.
+    /// </summary>
     [Serializable]
     public sealed class MissingConfigurationKeyException : Exception
     {
+        /// <summary>
+        /// The missing key
+        /// </summary>
         public string Key { get; }
 
+        /// <summary>
+        /// Description of the configuration source.
+        /// </summary>
         public string Configuration { get; }
 
         public MissingConfigurationKeyException()
@@ -52,6 +61,7 @@ namespace SimpleConfiguration
             Configuration = configuration?.ToString();
         }
 
+        /// <inheritdoc />
         public override void GetObjectData(SerializationInfo info, StreamingContext context)
         {
             base.GetObjectData(info, context);

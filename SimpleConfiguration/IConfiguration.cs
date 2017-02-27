@@ -2,16 +2,25 @@
 
 namespace SimpleConfiguration
 {
+    /// <summary>
+    /// Marks a value as nullable
+    /// </summary>
     [AttributeUsage(AttributeTargets.Method | AttributeTargets.Property | AttributeTargets.Field | AttributeTargets.ReturnValue | AttributeTargets.Parameter)]
     public sealed class CanBeNullAttribute : Attribute
     {
     }
 
+    /// <summary>
+    /// Marks a value as non-nullable.
+    /// </summary>
     [AttributeUsage(AttributeTargets.Method | AttributeTargets.Property | AttributeTargets.Field | AttributeTargets.ReturnValue | AttributeTargets.Parameter)]
     public sealed class NotNullAttribute : Attribute
     {
     }
 
+    /// <summary>
+    /// Configuration implementation interface
+    /// </summary>
     public interface IConfiguration
     {
         /// <summary>

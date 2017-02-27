@@ -15,7 +15,8 @@ namespace SimpleConfiguration
             _getter = getter;
         }
 
-        [return: NotNull]
+        /// <inheritdoc />
+        [return: CanBeNull]
         public string TryGetValue([NotNull] string key)
         {
             if (key == null)
