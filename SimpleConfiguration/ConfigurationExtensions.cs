@@ -14,7 +14,7 @@ namespace SimpleConfiguration
         /// <returns>The value fo the configuration</returns>
         /// <exception cref="ArgumentNullException">Thrown if the key is null</exception>
         /// <exception cref="MissingConfigurationKeyException">Thrown if there is no specified value for the key.</exception>
-        [NotNull]
+        [return: NotNull]
         public static  string GetValue([NotNull] this IConfiguration config, [NotNull] string key)
         {
             if (key == null)

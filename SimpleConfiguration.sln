@@ -1,17 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleConfiguration", "SimpleConfiguration\SimpleConfiguration.csproj", "{936BC36F-38E6-4850-B0EE-B7F9353F2BBE}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleConfiguration.Tests", "SimpleConfiguration.Tests\SimpleConfiguration.Tests.csproj", "{7F43924B-3A10-4AB5-91F5-A99CDB3A357D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{115D4544-14AB-45C3-8F93-0F829BD84CFE}"
 	ProjectSection(SolutionItems) = preProject
 		LICENSE.txt = LICENSE.txt
 		readme.md = readme.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleConfiguration.Tests", "Sharp.Configuration.Tests\SimpleConfiguration.Tests.csproj", "{7F43924B-3A10-4AB5-91F5-A99CDB3A357D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

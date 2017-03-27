@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <!-- Required elements-->
+    <id>SimpleConfiguration</id>
+    <version>1.0.1</version>
+    <description>Simple configuration library</description>
+    <authors>Henning Moe</authors>
+    <projectUrl>https://github.com/GeirGrusom/SimpleConfiguration</projectUrl>
+    <licenseUrl>https://raw.githubusercontent.com/GeirGrusom/SimpleConfiguration/master/LICENSE.txt</licenseUrl>
+    <!-- Optional elements -->
+    <!-- ... -->
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Configuration"></frameworkAssembly>
+    </frameworkAssemblies>
+  </metadata>
+  <!-- Optional 'files' node -->
+  <files>
+    <file src="bin\Release\SimpleConfiguration.dll" target="lib" />
+    <file src="bin\Release\SimpleConfiguration.xml" target="lib" />
+  </files>
+ </package>
